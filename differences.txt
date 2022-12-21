@@ -1,0 +1,10 @@
+Q#5. Which of these two Intents is the proper way to do an Intent?
+
+Generally Explicit intent is more secure so proper way to do an Intent.
+ThirdFragment is the proper way but int he SecondFragment file, I have modified the following changes to the intent variables: 
+
+Before
+	var intent = Intent(Intent.ACTION_VIEW) 
+
+After						
+	var intent = Intent(activity, ProductScrollingActivity::class.java) 
